@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Login</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body
+    style="background-image: url('assets/fundo.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+
+    <div class="login-box">
+        <div class="login-form">
+            <div class="digitando" id="texto"></div>
+            <div class="icon-img">
+                <img src="assets/astronauta.png" alt="astrounauta">
+            </div>
+            <form id="login-form">
+                <div class="input-box">
+                    <input type="text" pattern="[A-Za-zÀ-ÿ\s]+" title="Digite apenas letras e espaços" placeholder="SEU NOME" required>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="SEU RA" required>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Entrar">
+                </div>
+            </form>
+        </div>
+        <div class="logo">
+            <a href="https://www.unipar.br/">
+                <img src="assets/logo-unipar.png" alt="logo-unipar">
+            </a>
+        </div>
+
+
+        <script src="scripts/script.js"></script>
+        
+<script>
+  
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
+
+  
+  document.getElementById("login-form").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+    window.location.href = "../PaginaInicial/index.html"; 
+  });
+</script>
+
+
+</body>
+
+</html>

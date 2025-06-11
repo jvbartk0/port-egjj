@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="pk.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Conversor de Temperatura</h1>
+        
+        <div class="input-group">
+            <label for="celsius">Celsius (°C):</label>
+            <input type="number" id="celsius" placeholder="Digite a temperatura em Celsius">
+        </div>
+        
+        <div class="input-group">
+            <label for="fahrenheit">Fahrenheit (°F):</label>
+            <input type="number" id="fahrenheit" placeholder="Digite a temperatura em Fahrenheit">
+        </div>
+        
+        <div class="button-group">
+            <button id="convertCtoF">Converter °C → °F</button>
+            <button id="convertFtoC">Converter °F → °C</button>
+            <button id="reset">Limpar</button>
+        </div>
+        
+        <div class="formula-info">
+            <p>Fórmula de conversão:</p>
+            <p>°F = (°C × 9/5) + 32</p>
+            <p>°C = (°F − 32) × 5/9</p>
+        </div>
+    </div>
+
+    <script src="pk.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Inicial - Atividades</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="activity-button" onclick="loadActivity('../Apps/Calculadora de IMC/index.html')">Calculadora de IMC</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Calculadora de Média com Avaliação/pj.html')">Calculadora de Média</div>
+<div class="activity-button" onclick="loadActivity('../Apps/CONTADOR REGRESSIVO ( TIMER)/index.html')">Contador Regressivo</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Controle de Visibilidade/px.html')">Controle de Visibilidade</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Conversor de Temperatura/pk.html')">Conversor de Temperatura</div>
+<div class="activity-button" onclick="loadActivity('../Apps/CRONÔMETRO/index.html')">Cronômetro</div>
+<div class="activity-button" onclick="loadActivity('../Apps/EDITOR DE TEXTO SIMPLES/index.html')">Editor de Texto</div>
+<div class="activity-button" onclick="loadActivity('../Apps/GALERIA DE IMAGENS COM FILTRO/index.html')">Galeria de Imagens</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Jogo Da Velha/index.html')">Jogo da Velha</div>
+<div class="activity-button" onclick="loadActivity('../Apps/JOGO DE MEMORIA/play.html')">Jogo da Memória</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Lista de Compras/index.html')">Lista de Compras</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Simulador de Caixa Eletrônico/pz.html')">Caixa Eletrônico</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Sorteador de Nomes/index.html')">Sorteador de Nomes</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Tabuada Interativa/index.html')">Tabuada Interativa</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Validador de CPF (simples)/pl.html')">Validador de CPF</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Validador de Senha/index.html')">Validador de Senha</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Verificador de Numeros Primos/index.html')">Verificador de Primos</div>
+<div class="activity-button" onclick="loadActivity('../Apps/Jogo de Adivinhação/index.html')">Jogo de Adivinhação</div>
+<div class="activity-button" onclick="loadActivity('../Apps/To-do List/index.html')">To-do List</div>
+<div class="activity-button" onclick="loadActivity('../Apps/quiz/index.html')">Quizz</div>
+
+    </div>
+
+    <div class="content">
+      <iframe id="iframe" src="" title="atividade"></iframe>
+    </div>
+  </div>
+
+  <script>
+  function loadActivity(file) {
+    const iframe = document.getElementById("iframe");
+
+  
+    iframe.classList.remove("loaded");
+
+  
+    setTimeout(() => {
+      iframe.src = file;
+    }, 100);
+
+    
+    iframe.onload = () => {
+      iframe.classList.add("loaded");
+    };
+  }
+
+  document.querySelectorAll(".sidebar button").forEach((btn, index) => {
+    btn.style.setProperty('--i', index);
+  });
+</script>
+
+
+  </script>
+</body>
+</html>

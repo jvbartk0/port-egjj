@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../imagens/planodefundogame.jpg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 800px;
+  margin: 100px auto;
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  perspective: 1000px;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(0, 102, 255);
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-image: url('../imagens/backimage.jfif');
+  transform: rotateY(0deg);
+}
+
+.card.reveal-card {
+  transform: rotateY(180deg);
+}
+
+/* Removido o efeito hover automático que causava conflito */
+
+
+
+.card.disabled {
+  pointer-events: none;
+}
+
+.card.disabled .front {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+
+const disableCards = () => {
+  setTimeout(() => {
+    firstCard.classList.add('disabled');
+    secondCard.classList.add('disabled');
+    resetBoard();
+  }, 800); // espera 800 milissegundos antes de aplicar o efeito cinza
+};
+
+
+#resetButton {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  padding: 16px 28px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.3s;
+  
+}
+
+#resetButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-50%) scale(1.05);
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Regressivo Avançado</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contador Regressivo</h1>
+        
+        <div class="date-picker">
+            <label for="novaData">Defina a data final:</label>
+            <input type="datetime-local" id="novaData">
+            <button id="btnAlterarData">Aplicar</button>
+        </div>
+
+        <div class="timer">
+            <div class="time-box">
+                <span id="days">00</span>
+                <span>Dias</span>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <span>Horas</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <span>Minutos</span>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <span>Segundos</span>
+            </div>
+        </div>
+
+        <button id="btnControle">Pausar</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #005baa;
+    --secondary-color: #003366;
+    --success-color: #4CAF50;
+    --danger-color: #f44336;
+    --warning-color: #FFC107;
+    --text-color: #333;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.atm-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.atm-screen {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+
+#login-btn, #confirm-withdraw, #confirm-deposit {
+    background-color: var(--success-color);
+    color: white;
+}
+
+#cancel-withdraw, #cancel-deposit {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+#exit-btn {
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.menu-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.menu-options button {
+    margin-bottom: 0;
+}
+
+.balance-display {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#account-balance {
+    font-weight: bold;
+    color: var(--warning-color);
+}
+
+.quick-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.quick-amount {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+#message-text {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#ok-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid white;
+}

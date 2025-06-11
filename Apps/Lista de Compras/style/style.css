@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+main{
+    height: 50vh;
+    width: 100vh;
+    background-color: #00000033;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.336);
+}
+
+.cima{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    background-color: rgba(218, 171, 17, 0.986);
+    border-radius: 15px 15px 0 0;
+}
+
+
+.baixo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    /** adicionando sistema de rolagem */
+    max-height: 200px;  /* Altura máxima da área da lista */
+    overflow-y: auto;   /* Ativa a rolagem automática */
+    width: 94%;
+    border-radius: 5px; /* opcional */
+   
+
+    
+}
+
+input{
+    width: 50vh;
+    height: 7vh;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+
+.corAdicionar{
+    width: 20vh;
+    height: 7vh;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 15px;
+
+}
+
+.corAdicionar:hover{
+    background-color: green;
+}
+
+.corRemover{
+    width: 20vh;
+    height: 7vh;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 15px;
+}
+
+.corRemover:hover{
+    background-color: red;
+}
+
+/** adicinando sistema de rolagem */
+ul{
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    width: 100%
+    
+ 
+    
+}
+
+li{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f2f2f2 ;
+    border-radius: 3px;
+}
+
+.remover{
+    display: flex;
+    justify-content: left;
+    width: 100vh;
+}
+
+.comprado {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
