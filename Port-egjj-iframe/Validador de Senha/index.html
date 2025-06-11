@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Validador de Senha</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Validador de Senha Forte</h2>
+    <input type="password" id="password" placeholder="Digite sua senha">
+    <button onclick="validadorSenha()">Validar</button>
+
+    <ul id="lista">
+      <li id="caracter" class="invalid"> Pelo menos 8 caracteres</li>
+      <li id="maiuscula" class="invalid"> Letra maiúscula</li>
+      <li id="minuscula" class="invalid"> Letra minúscula</li>
+      <li id="numero" class="invalid"> Número</li>
+      <li id="especial" class="invalid"> Caractere especial</li>
+    </ul>
+        <p id="mensagem"></p>
+        <div id="barraContainer">
+  <div id="barraProgresso"></div>
+</div>
+  </div>
+
+  <script src="script/teste.js"></script>
+</body>
+</html>

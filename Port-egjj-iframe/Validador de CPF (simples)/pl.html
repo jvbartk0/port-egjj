@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de CPF</title>
+    <link rel="stylesheet" href="pl.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Validador de CPF</h1>
+        
+        <div class="input-group">
+            <label for="cpf">Digite o CPF:</label>
+            <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14">
+            <small>Digite apenas números ou no formato 000.000.000-00</small>
+        </div>
+        
+        <button id="validar">Validar CPF</button>
+        
+        <div id="resultado" class="resultado hidden">
+            <p>CPF: <span id="cpf-formatado"></span></p>
+            <p>Resultado: <span id="status"></span></p>
+        </div>
+    </div>
+
+    <script src="pl.js"></script>
+</body>
+</html>
