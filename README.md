@@ -9,7 +9,7 @@
 
 ## 📚 Visão Geral do Projeto
 
-Este repositório serve como um **Portfólio de Atividades Acadêmicas**, reunindo diversos projetos e exercícios desenvolvidos em grupo para a disciplina de **Programação Web** (ou similar) da **UNIPAR**. O objetivo principal foi consolidar o aprendizado em lógica de programação e desenvolvimento front-end, utilizando as tecnologias base da web.
+Este repositório serve como um **Portfólio de Atividades Acadêmicas**, reunindo diversos projetos e exercícios desenvolvidos em grupo para a disciplina de **Programação Web** da **UNIPAR**. O objetivo principal foi consolidar o aprendizado em lógica de programação e desenvolvimento front-end, utilizando as tecnologias base da web.
 
 O projeto principal funciona como um **Launcher** ou **Hub de Atividades**, onde o usuário realiza um *login* simples (apenas validação de formato) e é direcionado a uma página inicial que lista e permite a execução de todas as atividades desenvolvidas em *iframes*.
 
